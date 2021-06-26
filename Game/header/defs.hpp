@@ -1,0 +1,43 @@
+#pragma once
+#include<SDL2/SDL.h>
+#include<SDL2/SDL_image.h>
+#include<SDL2/SDL_mixer.h>
+
+#define SCREEN_WIDTH  1280
+#define SCREEN_HEIGHT 960
+
+#define NEW_WIDTH(x) (((x) * (SCREEN_WIDTH))/540)
+#define NEW_HEIGHT(x) (((x) * (SCREEN_HEIGHT))/720)
+
+#define CAR_WIDTH  NEW_WIDTH(100)
+#define CAR_HEIGHT NEW_HEIGHT(40)
+
+#define SCOPE_SPEED 25
+#define JUNGLEE1_SPEED 19
+#define JUNGLEE2_SPEED 21
+#define JUNGLEE3_SPEED 15
+#define JUNGLEE4_SPEED 17
+#define JUNGLEE5_SPEED 23
+
+#define DEFAULT_x  NEW_WIDTH(250)
+#define DEFAULT_y NEW_HEIGHT(650)
+
+#define MAZE_x NEW_WIDTH(390)
+#define MAZE_y NEW_HEIGHT(175)
+
+#define PLAYER_SPEED 7
+#define MAZE_SPEED 8
+#define PLAYER_WIDTH NEW_WIDTH(22)
+#define PLAYER_HEIGHT NEW_HEIGHT(45)
+
+#define CAR0_SPEED 30
+#define CAR1_SPEED 25
+#define CAR2_SPEED 31
+#define CAR3_SPEED 34
+#define CAR4_SPEED 24
+
+#define MAX_KEYBOARD_KEYS 350
+#define MAX_MOUSE_BUTTONS 5
+#define MAX_LEVELS 5
+
+#define MAX_SND_CHANNELS 8
