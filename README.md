@@ -2,7 +2,7 @@
 
 This is a 2D game developed by using C++ and SDL2 library.
 
-How to run the game:
+How to run the game in Ubuntu:
 
 1) To install SDL2 libraries used in this game :
     1) sudo apt-get install g++
