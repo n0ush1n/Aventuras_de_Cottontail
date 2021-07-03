@@ -67,10 +67,10 @@ void initSounds(void)//loading sounds and musics
 
 void initFont()
 {
-	gfont.f1 = TTF_OpenFont( "res/fonts/ArialCEBold.ttf", 40 );
-	gfont.f2 = TTF_OpenFont( "res/fonts/ERASBD.TTF", 70 );
-    gfont.f3 = TTF_OpenFont( "res/fonts/ArialCEBold.ttf", 50 );
-    gfont.f4 = TTF_OpenFont( "res/fonts/Eras Medium ITC.ttf", 50 );
+	gfont.f1 = TTF_OpenFont( "res/fonts/ArialCEBold.ttf", CHANGE_WIDTH(40) );
+	gfont.f2 = TTF_OpenFont( "res/fonts/ERASBD.TTF", CHANGE_WIDTH(70) );
+    gfont.f3 = TTF_OpenFont( "res/fonts/ArialCEBold.ttf", CHANGE_WIDTH(50) );
+    gfont.f4 = TTF_OpenFont( "res/fonts/Eras Medium ITC.ttf", CHANGE_WIDTH(50) );
 
 	gfont.textColor = { 0, 0, 0, 255 };
 }
