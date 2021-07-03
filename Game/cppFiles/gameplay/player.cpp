@@ -207,7 +207,7 @@ void doMazePlayer()//level 3 player movement
 		if(cnt1 == 0) player->dx = MAZE_SPEED;//not collided with maze, thus, can go right
 	}
 
-	if((player->x + player->dx+PLAYER_WIDTH <= 1012) && (player->x+ player->dx >= 290)) player->x += player->dx;//player is in the frame, so move
+	if((player->x + player->dx+PLAYER_WIDTH <= CHANGE_WIDTH(1012)) && (player->x+ player->dx >= CHANGE_WIDTH(290))) player->x += player->dx;//player is in the frame, so move
 	
 	if((player->y + player->dy+PLAYER_HEIGHT <= SCREEN_HEIGHT) && (player->y+ player->dy >= 0)) player->y += player->dy;//player is in the frame, so move
 

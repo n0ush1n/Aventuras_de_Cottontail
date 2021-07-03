@@ -35,7 +35,7 @@ void levelCompleted(void)
 		{
 				printf("Unable to render time texture!\n");
 		}
-		gTimeTextTexture.render(140, 380);//show new position in leaderboard text
+		gTimeTextTexture.render(CHANGE_WIDTH(140), CHANGE_HEIGHT(380));//show new position in leaderboard text
 
 		gfont.timeText.str(" ");
 
@@ -44,7 +44,7 @@ void levelCompleted(void)
 		{
 				printf("Unable to render time texture!\n");
 		}
-		gTimeTextTexture.render((SCREEN_WIDTH/2)-(gTimeTextTexture.getWidth()/2), 650 );//show current position  in leaderboard
+		gTimeTextTexture.render((SCREEN_WIDTH/2)-(gTimeTextTexture.getWidth()/2), CHANGE_HEIGHT(650) );//show current position  in leaderboard
 	}
 
 	if(allTimes.Check<10)//blinking enter text
