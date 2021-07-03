@@ -11,7 +11,7 @@ void LeaderboardMenu(void)
 	else 
 	{
 		leaderBoardSpriteSheetTexture.render( 0, 0, &leaderBoardSpriteClips[ 7 ] );
-		leaderBoardSpriteSheetTexture.render( 0, 760, &leaderBoardSpriteClips[ 1 ] );
+		leaderBoardSpriteSheetTexture.render( 0, CHANGE_HEIGHT(760), &leaderBoardSpriteClips[ 1 ] );
 	}
 
 	loadLeaderboardScores();
@@ -68,7 +68,7 @@ void LeaderboardMenu(void)
 			}
 			else
 			{
-				leaderBoardSpriteSheetTexture.render( 0, 760, &leaderBoardSpriteClips[ 1 ] );
+				leaderBoardSpriteSheetTexture.render( 0, CHANGE_HEIGHT(760), &leaderBoardSpriteClips[ 1 ] );
 			}
 			app.mouse.button[SDL_BUTTON_LEFT] = 0;		
 		}

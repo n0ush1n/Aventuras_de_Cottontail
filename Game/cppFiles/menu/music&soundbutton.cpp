@@ -9,9 +9,9 @@ void soundMusic(void)
     SoundSpriteSheetTexture.render( 0, 0, &SoundSpriteClips[ sfx.mVolCnt ] );//music volume currently
     SoundSpriteSheetTexture.render( 0, 0, &SoundSpriteClips[ sfx.sVolCnt+7 ] );//sound volume currently
 
-    if(app.mouse.y>830 && app.mouse.y<910)
+    if(app.mouse.y>CHANGE_HEIGHT(830) && app.mouse.y<CHANGE_HEIGHT(910))
 	{
-        if(app.mouse.x>420 && app.mouse.x<775)//go back to mainmenu
+        if(app.mouse.x>CHANGE_WIDTH(420) && app.mouse.x<CHANGE_WIDTH(775))//go back to mainmenu
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) //mouse clicked
             {
@@ -24,9 +24,9 @@ void soundMusic(void)
             }
         }   
     }
-	else if (app.mouse.y>635 && app.mouse.y<700)
+	else if (app.mouse.y>CHANGE_HEIGHT(635) && app.mouse.y<CHANGE_HEIGHT(700))
 	{
-        if(app.mouse.x>145 && app.mouse.x<205)//music volume decrease 
+        if(app.mouse.x>CHANGE_WIDTH(145) && app.mouse.x<CHANGE_WIDTH(205))//music volume decrease 
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) 
             {
@@ -40,7 +40,7 @@ void soundMusic(void)
             }
             SoundSpriteSheetTexture.render( 0, 0, &SoundSpriteClips[ 5 ] );//music button
         }
-        if(app.mouse.x>420 && app.mouse.x<480)//increase music volume
+        if(app.mouse.x>CHANGE_WIDTH(420) && app.mouse.x<CHANGE_WIDTH(480))//increase music volume
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) 
             {
@@ -54,7 +54,7 @@ void soundMusic(void)
             }
             SoundSpriteSheetTexture.render( 0, 0, &SoundSpriteClips[ 7 ] );//music button
         }
-        if(app.mouse.x>780 && app.mouse.x<840)
+        if(app.mouse.x>CHANGE_WIDTH(780) && app.mouse.x<CHANGE_WIDTH(840))
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) 
             {
@@ -66,9 +66,9 @@ void soundMusic(void)
                 }
                 if(sfx.sCount) {playSound(sfx.click);}
             }
-            SoundSpriteSheetTexture.render( 636, 0, &SoundSpriteClips[ 13 ] );//sound button
+            SoundSpriteSheetTexture.render( CHANGE_WIDTH(636), 0, &SoundSpriteClips[ 13 ] );//sound button
         }
-        if(app.mouse.x>1055 && app.mouse.x<1120)//increase sound volume
+        if(app.mouse.x>CHANGE_WIDTH(1055) && app.mouse.x<CHANGE_WIDTH(1120))//increase sound volume
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) 
             {
@@ -80,9 +80,9 @@ void soundMusic(void)
                 }
                 if(sfx.sCount) {playSound(sfx.click);}
             }
-            SoundSpriteSheetTexture.render( 636, 0, &SoundSpriteClips[ 15 ] );//sound button
+            SoundSpriteSheetTexture.render( CHANGE_WIDTH(636), 0, &SoundSpriteClips[ 15 ] );//sound button
         }
-        if(app.mouse.x>280 && app.mouse.x<345)//music play or pause
+        if(app.mouse.x>CHANGE_WIDTH(280) && app.mouse.x<CHANGE_WIDTH(345))//music play or pause
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) //mouse clicked
             {
@@ -108,7 +108,7 @@ void soundMusic(void)
             }
             SoundSpriteSheetTexture.render( 0, 0, &SoundSpriteClips[ 6 ] );//music button
         }
-        if(app.mouse.x>915 && app.mouse.x<980)//sound play or pause
+        if(app.mouse.x>CHANGE_WIDTH(915) && app.mouse.x<CHANGE_WIDTH(980))//sound play or pause
         {
             if(app.mouse.button[SDL_BUTTON_LEFT]) //mouse clicked
             {
@@ -122,7 +122,7 @@ void soundMusic(void)
                     sfx.sCount = 1 ;//sound on
                 }   
             }
-            SoundSpriteSheetTexture.render( 636, 0, &SoundSpriteClips[ 14 ] );//sound button
+            SoundSpriteSheetTexture.render( CHANGE_WIDTH(636), 0, &SoundSpriteClips[ 14 ] );//sound button
         }
     }   
     Mix_VolumeMusic((MIX_MAX_VOLUME*sfx.mVolume)/(96));//change music volume
