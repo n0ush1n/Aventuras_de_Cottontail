@@ -23,7 +23,7 @@ void menu(void)
             }
             if(app.mouse.y>NEW_HEIGHT(615) && app.mouse.y<NEW_HEIGHT(700))//sound and music settings
             {
-                if(app.mouse.x>NEW_WIDTH(29) && app.mouse.x<NEW_WIDTH(91))
+                if(app.mouse.x>NEW_WIDTH(26) && app.mouse.x<NEW_WIDTH(65))
                 {
                     if(app.mouse.button[SDL_BUTTON_LEFT]) 
                     {
@@ -32,7 +32,7 @@ void menu(void)
                     }
                     else 
                     {
-                        menuSpriteSheetTexture.render( 3, 0, &menuSpriteClips[ 2 ] );
+                        menuSpriteSheetTexture.render( CHANGE_WIDTH(3), 0, &menuSpriteClips[ 2 ] );
                     }
                 }   
             }

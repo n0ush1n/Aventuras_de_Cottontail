@@ -35,8 +35,8 @@ static void initScope()//initialize scope
 	memset(scope, 0, sizeof(Entity));
 
 	//initialize scope position
-	scope->x = SCREEN_WIDTH/2 - 105;
-	scope->y = SCREEN_HEIGHT/2 -30;
+	scope->x = SCREEN_WIDTH/2 - CHANGE_WIDTH(105);
+	scope->y = SCREEN_HEIGHT/2 -CHANGE_HEIGHT(30);
 }
 
 static void logic(void)//level item movements
@@ -81,7 +81,7 @@ static void logic(void)//level item movements
 
 			score.bullet = 1;//bullet shot now
 
-			jungleSpriteSheetTexture.render( scope->x+90, scope->y+90, &jungleSpriteClips[ 6 ] );//show bullet 
+			jungleSpriteSheetTexture.render( scope->x+CHANGE_WIDTH(90), scope->y+CHANGE_HEIGHT(90), &jungleSpriteClips[ 6 ] );//show bullet 
 
 			if(sfx.sCount) {playSound(sfx.gunshot);}//bullet shot sound
 
@@ -93,7 +93,7 @@ static void logic(void)//level item movements
             {
 				if(!game.level[2].collision.dead[i])//junglee still alive
 					{
-               		if(((scope->x+105 > junglee[i].x) && (scope->x+105 < junglee[i].x + 90)) && ((scope->y+105 > junglee[i].y) && (scope->y+105 < junglee[i].y + 90)) && ((scope->x+105 > window[i].x) && (scope->x+105 < window[i].x1)) && ((scope->y+105 > window[i].y) && (scope->y+105 < window[i].y1)))
+               		if(((scope->x+CHANGE_WIDTH(105) > junglee[i].x) && (scope->x+CHANGE_WIDTH(105) < junglee[i].x + 90)) && ((scope->y+CHANGE_HEIGHT(105) > junglee[i].y) && (scope->y+CHANGE_HEIGHT(105) < junglee[i].y + 90)) && ((scope->x+CHANGE_WIDTH(105) > window[i].x) && (scope->x+CHANGE_WIDTH(105) < window[i].x1)) && ((scope->y+CHANGE_HEIGHT(105) > window[i].y) && (scope->y+CHANGE_HEIGHT(105) < window[i].y1)))
 					{
 						if(sfx.sCount) {playSound(sfx.scream);}//junglee scream
 						cout << "ENEMY HIT\n" << "ENEMY no." << i+1 << "\n";

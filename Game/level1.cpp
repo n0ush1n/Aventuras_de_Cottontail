@@ -65,7 +65,7 @@ void level1()
 		{
 			if( (game.level[1].collision.check[1]==1))//map collected
 			{
-				if(player->y<80)//player reached the other side of the road
+				if(player->y<CHANGE_HEIGHT(80))//player reached the other side of the road
 				{
 					Mix_HaltMusic();
 					SDL_RenderClear(app.renderer);
