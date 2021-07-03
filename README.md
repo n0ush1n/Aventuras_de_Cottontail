@@ -13,6 +13,6 @@ How to run the game in Ubuntu:
     6) sudo apt-get install libsdl2-ttf-dev
     
 2) Open terminal in the game folder and run this command:
-     g++ main.cpp -o main -lSDL2 -lSDL2_image -lSDL2_mixer -lSDL2_ttf  && ./main
+     make
      
 3) Now enjoy the game.
