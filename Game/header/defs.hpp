@@ -3,8 +3,8 @@
 #include<SDL2/SDL_image.h>
 #include<SDL2/SDL_mixer.h>
 
-#define SCREEN_WIDTH  960
-#define SCREEN_HEIGHT 720
+#define SCREEN_WIDTH 1280
+#define SCREEN_HEIGHT 960
 
 #define NEW_WIDTH(x) (((x) * (SCREEN_WIDTH))/540)
 #define NEW_HEIGHT(x) (((x) * (SCREEN_HEIGHT))/720)
