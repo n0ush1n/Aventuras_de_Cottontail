@@ -80,6 +80,7 @@ static void logic(void)//level item movements
             game.level[2].collision.bullet++;//number of used  bullet
 
 			score.bullet = 1;//bullet shot now
+			score.bulletReduce++;
 
 			jungleSpriteSheetTexture.render( scope->x+CHANGE_WIDTH(90), scope->y+CHANGE_HEIGHT(90), &jungleSpriteClips[ 6 ] );//show bullet 
 
