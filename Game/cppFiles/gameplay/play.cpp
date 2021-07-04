@@ -155,6 +155,7 @@ void loadSavedGame()
         score.level[game.levelNow] = A[18];//current score
         score.ex = 0;//previous level score
         score.reduce[2] = 2;//level 2 scoring factor
+	     score.bulletReduce = 0;
         //scope coordinates
         player->x = 10;
 		player->y = 350;
