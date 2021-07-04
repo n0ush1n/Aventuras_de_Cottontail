@@ -80,6 +80,7 @@ void levelCompleted(void)
 			game.playing = 0 ;//game not playing
 			game.mainMenu = 1;//show menu 
 			game.save = 0 ;//not saving game
+			game.level[3].completed = 0;
 			Mix_PauseMusic();
 			if(sfx.mCount) {playMusic();}//menu music
 		}
