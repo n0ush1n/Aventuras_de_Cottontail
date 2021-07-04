@@ -163,6 +163,7 @@ typedef struct {
 	int ex;//score of previous level
 	int reduce[MAX_LEVELS];//score factor
 	int bullet;
+	int bulletReduce;
 } Score;
 
 typedef struct {
