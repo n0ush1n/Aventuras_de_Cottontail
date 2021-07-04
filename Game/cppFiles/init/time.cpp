@@ -48,7 +48,7 @@ void timer()//show current score
 	
 	if(game.levelNow==2)//level2: score changes with bullets shot
 	{
-		score.recent -= game.level[2].collision.bullet * 30;
+		score.recent -= score.bulletReduce * 30;
 	}
 
 	if(score.recent<=0)//minimum score 0
